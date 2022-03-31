@@ -5,6 +5,7 @@ import { EditCode } from "./EditCode";
 import { Deploy } from "./Deploy";
 import { Publish } from "./Publish";
 import { AddSSO } from "./AddSSO";
+import { GetUserInfo } from "../sso/getUserInfo";
 
 export function Welcome(props: { environment?: string }) {
   const { environment } = {
@@ -44,6 +45,7 @@ export function Welcome(props: { environment?: string }) {
             <div>
               <EditCode />
               <AddSSO />
+              <GetUserInfo />
             </div>
           )}
           {selectedMenuItem === "azure" && (

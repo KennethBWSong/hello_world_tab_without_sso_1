@@ -50,5 +50,9 @@
         "identity",
         "messageTeamMembers"
     ],
-    "validDomains": []
+    "validDomains": [],
+    "webApplicationInfo": {
+        "id": "{{localSettings.auth.clientId}}",
+        "resource": "{{{localSettings.auth.applicationIdUris}}}"
+    }
 }
